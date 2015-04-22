@@ -7,3 +7,5 @@ The biggest challenges in writing this application was coming up with a suitable
 Additionally, a strong knowledge of the basics of pointers were required to handle processing the array; the assignment specifications denied us the use of standard library string to hold and process the maze data.
 
 The main classes of the application are an array based stack implementation, a simple struct to hold cell information and a class responsible for solving the maze.
+
+![alt tag](http://michaelpratt.ca/images/maze.png)
