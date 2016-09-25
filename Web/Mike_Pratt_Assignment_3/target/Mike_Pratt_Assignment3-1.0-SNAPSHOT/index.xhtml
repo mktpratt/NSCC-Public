@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Guess Game using CDI Managed Beans</title>
+    </h:head>
+    <h:body>
+        This example:
+        <br/>
+        - Small sample shows jsf - CDI Managed Bean connection.  
+        <br/>
+        - This is current Java EE structure
+        <br/>
+        - If this project doesn't run as is, try:
+        <br/>
+        - right-click project and select "Clean and Build"
+        <br/>
+        1 - click error and select search of Maven repository 
+        <br/>
+        2 - recreate a Maven Web project, add JSF framework, and copy in sources
+        <br/>
+        Check GameLogic.java code and GlassFish log output to follow different bean types.
+        <br/>
+        <br/>
+
+        Bean is : #{guessBean.name} +  #{guessBean.count}   
+        <br/>
+        Session Bean is : #{guessSession.name} + #{guessSession.count} 
+        <br/>
+        Singleton Bean is : #{globalGuesses.name} +  #{globalGuesses.count} 
+        <br/>
+        Logic at : #{gameLogic.doCheck()}  
+        <br/>
+
+        <h2><a href="faces/PlayGameStart.xhtml"> Start Game</a></h2>
+    </h:body>
+</html>
+

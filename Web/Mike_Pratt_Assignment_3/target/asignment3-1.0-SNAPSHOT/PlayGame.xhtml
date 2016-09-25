@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./gameTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    
+ 
+       
+       
+    
+    
+    <ui:define name="content">
+        Guesses: #{PlayerBean.count}
+        <h:form> 
+            <h:outputText value="#{PlayerBean.name}"  />   
+            <h:outputText value="&lt;br/&gt;"  escape="false"/>  
+
+            RESPONSE:
+            <h:outputText value="#{requestBean.guessResponse}"  />   
+            <h:outputText value="&lt;br/&gt;"  escape="false"/>  
+
+            <h:outputText value="Player Guess:"  />
+            <h:inputText value="#{requestBean.guess}" title='guessed number' id='guessed_number' />
+            <h:outputText value="&lt;br/&gt;"  escape="false"/>  
+
+            <h:commandButton  value="Guess" action="#{requestBean.doCheck()}" />
+            <h:messages style="color:red;margin:8px;"/>
+        </h:form>
+    </ui:define>
+</ui:composition>

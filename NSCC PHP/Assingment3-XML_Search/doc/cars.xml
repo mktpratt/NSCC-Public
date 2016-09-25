@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cars>
+<car>
+	<make>Toyota</make>
+	<model>Corolla</model>
+	<color>Red</color>
+	<year>2006</year>
+</car>
+<car>
+	<make>Dodge</make>
+	<model>Avenger</model>
+	<color>Black</color>
+	<year>2013</year>
+</car>
+<car>
+	<make>Honda</make>
+	<model>Civic</model>
+	<color>Blue</color>
+	<year>2009</year>
+</car>
+<car>
+	<make>Mazda</make>
+	<model>3</model>
+	<color>Silver</color>
+	<year>2006</year>
+</car>
+<car>
+	<make>Hyundai</make>
+	<model>Accent</model>
+	<color>Green</color>
+	<year>2009</year>
+</car>
+<car>
+	<make>Acura</make>
+	<model>Integra</model>
+	<color>White</color>
+	<year>1992</year>
+</car>
+<car>
+	<make>Suzuki</make>
+	<model>Grand Vitara</model>
+	<color>White</color>
+	<year>2006</year>
+</car>
+<car>
+	<make>Dodge</make>
+	<model>Charger</model>
+	<color>Black</color>
+	<year>1967</year>
+</car>
+<car>
+	<make>Porche</make>
+	<model>311</model>
+	<color>Blue</color>
+	<year>2011</year>
+</car>
+<car>
+	<make>Buick</make>
+	<model>Town Car</model>
+	<color>Black</color>
+	<year>1985</year>
+</car>
+<car>
+	<make>Ford</make>
+	<model>Fusion</model>
+	<color>Green</color>
+	<year>2009</year>
+</car>
+<car>
+	<make>Chevrolet</make>
+	<model>Impala</model>
+	<color>Green</color>
+	<year>1956</year>
+</car>
+</cars>

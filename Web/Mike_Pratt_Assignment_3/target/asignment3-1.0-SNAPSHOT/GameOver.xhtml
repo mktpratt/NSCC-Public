@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./gameTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <!-- Only define the content section, and 
+    missing parts are taken from the template -->
+
+<ui:define name="top">
+    GAME OVER
+    <h:form> 
+        <h:outputText value="Player Name:"  />
+        <h:inputText value="#{PlayerBean.name}" 
+                     title='name' 
+                     id='name'  
+                     required ="true"
+                     label="Player Name" >        
+        </h:inputText>   
+    </h:form>
+</ui:define>
+   
+
+<ui:define name="content">
+    <h:dataTable value="#{sharedApplicationSingleton.winnersArrayList}" var="winner">
+    <h:column>    				
+    <f:facet name="header">Name</f:facet>    				
+      #{winner.name}
+    </h:column>
+    <h:column>
+    <f:facet name="header">Number Of Guesses</f:facet>
+      #{winner.score}
+    </h:column>
+    </h:dataTable>
+</ui:define>
+ <ui:define name="bottom">
+     
+    <h:form> 
+        <h:outputText value="Game Over : Winner is   " />   
+        <h:outputText value="#{sharedApplicationSingleton.name}"  />   
+          <h:outputText value="#{sharedApplicationSingleton.count}"  />   
+        <h:commandButton  value="Play Again " action="#{requestBean.startGame()}" />
+
+    </h:form>
+
+ </ui:define>
+
+</ui:composition>

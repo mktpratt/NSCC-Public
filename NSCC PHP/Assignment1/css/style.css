@@ -1,0 +1,25 @@
+table, td, th {
+    border: 2px solid #708090;
+}
+
+.center-delete {
+    display: block;
+    margin: auto;
+}
+
+.center-edit {
+    display: block;
+    margin: auto;
+}
+
+td {
+    text-align: center;
+}
+
+td input {
+    float: left;
+}
+
+.delButton {
+    color: red;
+}

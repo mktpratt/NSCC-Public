@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./gameTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="content">
+        Welcome to Guess the number JSF bean managed application
+        <h:form> 
+            <br />
+            <h:outputText value="Player Name:"  />
+            <h:inputText value="#{playerManagedBean.name}" 
+                         title='name' 
+                         id='name'  
+                         required ="true"
+                         label="Player Name" >        
+            </h:inputText>   
+            <h:outputText value="&lt;br/&gt;"  escape="false"/>               
+            <h:outputText value="&lt;br/&gt;"  escape="false"/>  
+            <h:commandButton  value="Start" action="#{playerManagedBean.startplayer()}" />
+            <h:messages style="color:red;margin:8px;" />
+        </h:form>
+    </ui:define>
+    <ui:define name="winner">
+        <h:form> 
+            <h:outputText value="Last Winner Name : "  />
+            <h:inputText value="#{playerManagedBean.winner }" 
+                         title='name' 
+                         id='winnername'  
+                         required ="true"
+                         label="Player Name" >           
+            </h:inputText>   
+            <h:outputText value="&lt;br/&gt;"  escape="false"/>  
+            <h:outputText value="Player Score: "  />
+            <h:inputText value="#{playerManagedBean.winnerScore}" 
+                         id='winnerpoints' >
+            </h:inputText>
+        </h:form>
+    </ui:define>
+</ui:composition>

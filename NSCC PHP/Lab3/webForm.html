@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<style>
+    input[type=text]:focus {
+        background-color: yellow;
+        font-style: italic;
+    }
+
+</style>
+
+<html>
+<head>
+    <title>Web Form</title>
+    <script type="text/javascript" src="validator.js"></script>
+</head>
+<body>
+
+
+<form name="myForm" action="#" onsubmit="return validateForm();">
+<label>
+    First Name:
+    <input type="text" name="fName" id="fName"/>
+</label>
+    <br />
+    <label>
+        Last Name:
+        <input type="text" name="lName" id="lName"/>
+    </label>
+    <br />
+    <label>
+        Address 1:
+        <input type="text" name="address1" id="address1"/>
+    </label>
+    <br />
+    <label>
+        Address 2:
+        <input type="text" name="address2" id="address2"/>
+    </label>
+    <br />
+    <label>
+        Email:
+        <input type="text" name="email" id="email"/>
+    </label>
+    <br />
+    <label>
+        <input type="checkbox" name="termsAgreement" id="termsAgreement">
+        Accept Terms and Conditions
+    </label>
+    <span id="agreeSpan"></span>
+    <br />
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
